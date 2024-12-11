@@ -14,3 +14,20 @@ C:\Users\Muhammad Rengga\Downloads\school\PBO\FP\src\obj\Debug\net8.0-windows\re
 C:\Users\Muhammad Rengga\Downloads\school\PBO\FP\src\obj\Debug\net8.0-windows\FP.pdb
 C:\Users\Muhammad Rengga\Downloads\school\PBO\FP\src\obj\Debug\net8.0-windows\FP.genruntimeconfig.cache
 C:\Users\Muhammad Rengga\Downloads\school\PBO\FP\src\obj\Debug\net8.0-windows\ref\FP.dll
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\bin\Debug\net8.0-windows\FP.exe
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\bin\Debug\net8.0-windows\FP.deps.json
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\bin\Debug\net8.0-windows\FP.runtimeconfig.json
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\bin\Debug\net8.0-windows\FP.dll
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\bin\Debug\net8.0-windows\FP.pdb
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\obj\Debug\net8.0-windows\FP.MainForm.resources
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\obj\Debug\net8.0-windows\FP.csproj.GenerateResource.cache
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\obj\Debug\net8.0-windows\FP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\obj\Debug\net8.0-windows\FP.AssemblyInfoInputs.cache
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\obj\Debug\net8.0-windows\FP.AssemblyInfo.cs
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\obj\Debug\net8.0-windows\FP.csproj.CoreCompileInputs.cache
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\obj\Debug\net8.0-windows\FP.sourcelink.json
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\obj\Debug\net8.0-windows\FP.dll
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\obj\Debug\net8.0-windows\refint\FP.dll
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\obj\Debug\net8.0-windows\FP.pdb
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\obj\Debug\net8.0-windows\FP.genruntimeconfig.cache
+C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\obj\Debug\net8.0-windows\ref\FP.dll

@@ -10,13 +10,18 @@ namespace FP
         private Ruangan currentRoom;
         private Size originalSize;
         private string selectedItemName;
+        private bool isFullScreen = false;
+
+        private int roomIndex = 0;
+        private Ruangan[] rooms;
 
         public MainForm()
         {
-            InitializeRoom1();
+            InitializeRooms();
             this.Text = this.currentRoom.Name;
-            this.Size = new Size(800, 600);
-
+            this.Size = new Size(745, 450);
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
 
             if (!string.IsNullOrEmpty(currentRoom.BackgroundImagePath) && File.Exists(currentRoom.BackgroundImagePath))
             {
@@ -35,15 +40,30 @@ namespace FP
             this.MouseClick += MainForm_MouseClick;
         }
 
-        private void InitializeRoom1()
+        private void InitializeRooms()
         {
-            currentRoom = new Ruangan("Ruangan 1", "../../../../images/Room 1/bg.png");
+            rooms = new Ruangan[]
+            {
+                new Ruangan("Ruangan 1", "../../../../images/Room 1/bg.png"),
+                new Ruangan("Ruangan 2", "../../../../images/Room 2/bg.png"),
+                new Ruangan("Ruangan 3", "../../../../images/Room 3/bg.png")
+            };
 
-            currentRoom.AddItem(new Benda("Table", new Point(150, 600), "../../../../images/Room 1/meja_pc_awal.png", new Size(420, 220)));
-            currentRoom.AddItem(new Benda("Tabletop Speaker", new Point(450, 540), "../../../../images/Room 1/speaker.png", new Size(45, 60)));
-            currentRoom.AddItem(new Benda("Lamp", new Point(450, 465), "../../../../images/Room 1/lampu_mati.png", new Size(100, 140)));
-            currentRoom.AddItem(new Benda("PC", new Point(190, 375), "../../../../images/Room 1/pc_awal.png", new Size(250, 225)));
-            currentRoom.AddItem(new Benda("Chair", new Point(0, 420), "../../../../images/Room 1/kursi_gaming.png", new Size(500, 470)));
+            // Ruangan 1
+            rooms[0].AddItem(new Benda("Table", new Point(150, 600), "../../../../images/Room 1/meja_pc_awal.png", new Size(420, 220)));
+            rooms[0].AddItem(new Benda("Tabletop Speaker", new Point(450, 540), "../../../../images/Room 1/speaker.png", new Size(45, 60)));
+            rooms[0].AddItem(new Benda("Lamp", new Point(450, 465), "../../../../images/Room 1/lampu_mati.png", new Size(100, 140)));
+            rooms[0].AddItem(new Benda("PC", new Point(190, 375), "../../../../images/Room 1/pc_awal.png", new Size(250, 225)));
+            rooms[0].AddItem(new Benda("Chair", new Point(0, 420), "../../../../images/Room 1/kursi_gaming.png", new Size(500, 470)));
+
+            // Ruangan 2
+            
+
+            // Ruangan 3
+            
+
+            // Set ruangan pertama yang aktif
+            currentRoom = rooms[roomIndex];
         }
 
         private void MainForm_MouseClick(object sender, MouseEventArgs e)
@@ -144,6 +164,67 @@ namespace FP
         {
             base.OnResize(e);
             Invalidate();
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Right)
+            {
+                roomIndex = (roomIndex + 1) % rooms.Length; // Pindah ke ruangan berikutnya (sirkuler)
+                currentRoom = rooms[roomIndex];
+                this.Text = currentRoom.Name; // Update judul jendela dengan nama ruangan baru
+                Invalidate();
+                return true;
+            }
+            else if (keyData == Keys.Left)
+            {
+                roomIndex = (roomIndex - 1 + rooms.Length) % rooms.Length; // Pindah ke ruangan sebelumnya (sirkuler)
+                currentRoom = rooms[roomIndex];
+                this.Text = currentRoom.Name; // Update judul jendela dengan nama ruangan baru
+                Invalidate();
+                return true;
+            }
+
+            if (keyData == Keys.F11)
+            {
+                ToggleFullScreen();
+                return true;
+            }
+
+            if (keyData == Keys.Escape)
+            {
+                ExitFullScreen();
+                return true;
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        private void ToggleFullScreen()
+        {
+            if (isFullScreen)
+            {
+                ExitFullScreen();
+            }
+            else
+            {
+                EnterFullScreen();
+            }
+        }
+
+        private void EnterFullScreen()
+        {
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+            isFullScreen = true;
+        }
+
+        private void ExitFullScreen()
+        {
+            this.FormBorderStyle = FormBorderStyle.Sizable;
+            this.WindowState = FormWindowState.Normal;
+            this.Size = new Size(745, 450);
+            isFullScreen = false;
         }
     }
 }

@@ -8,23 +8,23 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Muhammad Rengga\\.nuget\\packages\\": {},
+    "C:\\Users\\dyanw\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\src\\FP.csproj",
+      "projectUniqueName": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\FP.csproj",
       "projectName": "FP",
-      "projectPath": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\src\\FP.csproj",
-      "packagesPath": "C:\\Users\\Muhammad Rengga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\src\\obj\\",
+      "projectPath": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\FP.csproj",
+      "packagesPath": "C:\\Users\\dyanw\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Muhammad Rengga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dyanw\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -75,7 +75,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
