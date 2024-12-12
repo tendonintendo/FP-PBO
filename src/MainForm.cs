@@ -20,8 +20,10 @@ namespace FP
             InitializeRooms();
             this.Text = this.currentRoom.Name;
             this.Size = new Size(745, 450);
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.WindowState = FormWindowState.Normal;
+            EnterFullScreen();
 
             if (!string.IsNullOrEmpty(currentRoom.BackgroundImagePath) && File.Exists(currentRoom.BackgroundImagePath))
             {
@@ -65,17 +67,25 @@ namespace FP
             rooms[0].AddItem(new Benda("Headset kiri", new Point(1160, 620), "../../../../images/Room 1/headset.png", new Size(80, 90)));
 
             // Ruangan 2
+            rooms[1].AddItem(new Benda("Bathtub shelf", new Point(583, 315), "../../../../images/Room 2/rak_bathup_awal.png", new Size(220, 153)));
             rooms[1].AddItem(new Benda ("Bathtub", new Point(220,215), "../../../../images/Room 2/bathup.png", new Size(600,630)));
             rooms[1].AddItem(new Benda("Trash can", new Point(27, 625), "../../../../images/Room 2/tempat_sampah_awal.png", new Size(200, 220)));
             rooms[1].AddItem(new Benda("Shelf", new Point(15, 175), "../../../../images/Room 2/rak_kiri_awal.png", new Size(200, 420)));
-            rooms[1].AddItem(new Benda("Bathtub shelf", new Point(583, 315), "../../../../images/Room 2/rak_bathup_awal.png", new Size(220, 153)));
             rooms[1].AddItem(new Benda("Towel", new Point(860, 412), "../../../../images/Room 2/serbet.png", new Size(98, 253)));
             rooms[1].AddItem(new Benda("Sink", new Point(1008, 420), "../../../../images/Room 2/lemari.png", new Size(313, 413)));
             rooms[1].AddItem(new Benda("Mirror", new Point(1035, 139), "../../../../images/Room 2/cermin_awal.png", new Size(263, 263)));
             rooms[1].AddItem(new Benda("Toilet", new Point(1430, 404), "../../../../images/Room 2/WC.png", new Size(224, 427)));
             rooms[1].AddItem(new Benda("Tissue", new Point(1680, 500), "../../../../images/Room 2/Tisu.png", new Size(190, 200)));
-            // Ruangan 3
 
+            // Ruangan 3
+            rooms[2].AddItem(new Benda("kasur", new Point(335, 485), "../../../../images/Room 3/kasur.png", new Size(696, 348)));
+            rooms[2].AddItem(new Benda("Rak kasur", new Point(65, 503), "../../../../images/Room 3/rakkasur_awal.png", new Size(240, 340)));
+            rooms[2].AddItem(new Benda("Rak atas", new Point(45, 100), "../../../../images/Room 3/rakatas_awal.png", new Size(290, 320)));
+            rooms[2].AddItem(new Benda("Lukisan", new Point(370, 220), "../../../../images/Room 3/lukisan.png", new Size(240, 170)));
+            rooms[2].AddItem(new Benda("Lampu atas", new Point(885, -34), "../../../../images/Room 3/lampuatas.png", new Size(140, 350)));
+            rooms[2].AddItem(new Benda("Perapian", new Point(1055, 403), "../../../../images/Room 3/perapian.png", new Size(420, 430)));
+            rooms[2].AddItem(new Benda("Banteng", new Point(1100, 200), "../../../../images/Room 3/banteng.png", new Size(340, 180)));
+            rooms[2].AddItem(new Benda("Lemari", new Point(1470, 184), "../../../../images/Room 3/lemari.png", new Size(390, 650)));
 
             // Set ruangan pertama yang aktif
             currentRoom = rooms[roomIndex];
@@ -185,7 +195,7 @@ namespace FP
         {
             if (keyData == Keys.Right)
             {
-                roomIndex = (roomIndex + 1) % rooms.Length; // Pindah ke ruangan berikutnya (sirkuler)
+                roomIndex = (roomIndex + 1) % rooms.Length;
                 currentRoom = rooms[roomIndex];
                 this.Text = currentRoom.Name; // Update judul jendela dengan nama ruangan baru
                 Invalidate();
@@ -193,7 +203,7 @@ namespace FP
             }
             else if (keyData == Keys.Left)
             {
-                roomIndex = (roomIndex - 1 + rooms.Length) % rooms.Length; // Pindah ke ruangan sebelumnya (sirkuler)
+                roomIndex = (roomIndex - 1 + rooms.Length) % rooms.Length;
                 currentRoom = rooms[roomIndex];
                 this.Text = currentRoom.Name; // Update judul jendela dengan nama ruangan baru
                 Invalidate();
@@ -236,7 +246,7 @@ namespace FP
 
         private void ExitFullScreen()
         {
-            this.FormBorderStyle = FormBorderStyle.Sizable;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.WindowState = FormWindowState.Normal;
             this.Size = new Size(745, 450);
             isFullScreen = false;
