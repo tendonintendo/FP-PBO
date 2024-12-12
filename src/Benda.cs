@@ -1,24 +1,28 @@
-﻿using System.Drawing;
+﻿using Accessibility;
+using System.Drawing;
 
 namespace FP
 {
     public class Benda
     {
-        public string Name { get; set; }
+        private string _name, _imagePath;
+        private Point _position;
+        private Size _imageSize;
+        public string Name { get { return _name; } }
 
-        public Point Position { get; set; }
+        public Point Position { get { return _position; } }
 
-        public string ImagePath { get; set; }
+        public string ImagePath { get { return _imagePath; } set { _imagePath = value ?? _imagePath; } }
 
-        public Size ImageSize { get; set; }
+        public Size ImageSize { get { return _imageSize; } }
 
         public Benda(string name, Point position, string imagePath, Size? imageSize = null)
         {
-            Name = name;
-            Position = position;
-            ImagePath = imagePath;
+            _name = name;
+            _position = position;
+            _imagePath = imagePath;
 
-            ImageSize = imageSize ?? new Size(100, 100);
+            _imageSize = imageSize ?? new Size(100, 100);
         }
     }
 }

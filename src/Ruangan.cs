@@ -5,16 +5,19 @@ namespace FP
 {
     public class Ruangan
     {
+        private string _backgroundImagePath;
+        private string _name;
+        private List<Benda> _items;
 
-        public string BackgroundImagePath { get; set; }
-        public string Name { get; set; }
-        public List<Benda> Items { get; set; }
+        public string BackgroundImagePath { get { return _backgroundImagePath; } }
+        public string Name { get { return _name; } }
+        public List<Benda> Items { get { return _items; } }
 
         public Ruangan(string name, string backgroundImagePath)
         {
-            BackgroundImagePath = backgroundImagePath;
-            Items = new List<Benda>();
-            Name = name;
+            _backgroundImagePath = backgroundImagePath;
+            _items = new List<Benda>();
+            _name = name;
         }
 
         public void AddItem(Benda item)
