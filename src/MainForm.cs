@@ -12,6 +12,7 @@ namespace FP
         private string selectedItemName;
         private bool isFullScreen = false;
 
+
         private int roomIndex = 0;
         private Ruangan[] rooms;
 
@@ -40,6 +41,7 @@ namespace FP
 
             this.DoubleBuffered = true;
             this.MouseClick += MainForm_MouseClick;
+            this.MouseMove += MainForm_MouseMove;
         }
 
         private void InitializeRooms()
@@ -126,6 +128,50 @@ namespace FP
 
             selectedItemName = null;
             Invalidate();
+        }
+
+        private void MainForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            bool cursorOverItem = false;
+
+            if (originalSize == null) return;
+
+            float scaleX = (float)this.ClientSize.Width / originalSize.Width;
+            float scaleY = (float)this.ClientSize.Height / originalSize.Height;
+
+            float scale = Math.Min(scaleX, scaleY);
+
+            float scaledBgWidth = originalSize.Width * scale;
+            float scaledBgHeight = originalSize.Height * scale;
+
+            float offsetX = (this.ClientSize.Width - scaledBgWidth) / 2;
+            float offsetY = (this.ClientSize.Height - scaledBgHeight) / 2;
+
+            foreach (var item in currentRoom.Items)
+            {
+                float scaledX = offsetX + item.Position.X * scale;
+                float scaledY = offsetY + item.Position.Y * scale;
+
+                float scaledWidth = item.ImageSize.Width * scale;
+                float scaledHeight = item.ImageSize.Height * scale;
+
+                RectangleF itemRect = new RectangleF(scaledX, scaledY, scaledWidth, scaledHeight);
+
+                if (itemRect.Contains(e.Location))
+                {
+                    cursorOverItem = true;
+                    break;
+                }
+            }
+
+            if (cursorOverItem)
+            {
+                this.Cursor = Cursors.Hand;
+            }
+            else
+            {
+                this.Cursor = Cursors.Default;
+            }
         }
 
         protected override void OnPaint(PaintEventArgs e)
