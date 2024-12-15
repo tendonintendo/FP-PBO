@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp\\src\\gameclock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:gameclock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp\\src\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +42,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "GameClock.cs",
+              "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\GameClock.cs",
+              "RelativeDocumentMoniker": "GameClock.cs",
+              "ToolTip": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\GameClock.cs",
+              "RelativeToolTip": "GameClock.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAkwFUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T03:39:29.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FP.csproj",
               "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\FP.csproj",
               "RelativeDocumentMoniker": "FP.csproj",
@@ -50,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Ruangan.cs",
               "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\Ruangan.cs",
               "RelativeDocumentMoniker": "Ruangan.cs",
@@ -62,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Benda.cs",
               "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\Benda.cs",
               "RelativeDocumentMoniker": "Benda.cs",
@@ -74,20 +91,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAANMAAAAAAAAAAAAcwNwAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAACUBAAAAAAAAAAAcwEIBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-30T13:39:15.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
