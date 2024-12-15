@@ -85,7 +85,7 @@ namespace FP
             Controls.Add(tableLayoutPanel);
             Name = "HomeForm";
             Text = "HomeForm";
-            Load += HomeForm_Load;
+            //Load += HomeForm_Load;
             tableLayoutPanel.ResumeLayout(false);
             tableLayoutPanel.PerformLayout();
             ResumeLayout(false);
