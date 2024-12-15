@@ -83,6 +83,41 @@ namespace FP
             path.CloseFigure();
             return path;
         }
+
+        /// <summary>
+        /// Menghentikan dan membersihkan resource yang digunakan oleh GameClock.
+        /// </summary>
+        public void Dispose()
+        {
+            // Hentikan timer jika masih berjalan
+            if (gameTimer != null)
+            {
+                gameTimer.Stop();
+                gameTimer.Tick -= GameTimer_Tick;
+                gameTimer.Dispose();
+                gameTimer = null;
+            }
+
+            // Dispose resource lainnya
+            if (clockFont != null)
+            {
+                clockFont.Dispose();
+                clockFont = null;
+            }
+
+            if (backgroundBrush != null)
+            {
+                backgroundBrush.Dispose();
+                backgroundBrush = null;
+            }
+
+            if (textBrush != null)
+            {
+                textBrush.Dispose();
+                textBrush = null;
+            }
+        }
+
         public void ResetTime()
         {
             gameTime = new TimeSpan(12, 0, 0);

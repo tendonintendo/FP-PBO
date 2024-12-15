@@ -1,4 +1,5 @@
-﻿using System;
+﻿// MainForm.cs
+using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
@@ -17,6 +18,7 @@ namespace FP
         private Ruangan[] rooms;
 
         private GameClock gameClock;
+        private BackgroundMusic backgroundMusic;
 
         public MainForm()
         {
@@ -45,9 +47,20 @@ namespace FP
             this.MouseClick += MainForm_MouseClick;
             this.MouseMove += MainForm_MouseMove;
 
-            // Inisialisasi GameClock
             gameClock = new GameClock();
             gameClock.TimeUpdated += GameClock_TimeUpdated;
+
+            string musicPath = Path.GetFullPath(Path.Combine(Application.StartupPath, "../../../../music/music1.mp3"));
+            if (File.Exists(musicPath))
+            {
+                backgroundMusic = new BackgroundMusic(musicPath);
+                backgroundMusic.Play();
+            }
+            else
+            {
+                MessageBox.Show($"Music file not found: {musicPath}");
+                Console.WriteLine($"Invalid music path: {musicPath}");
+            }
         }
 
         private void InitializeRooms()
@@ -231,7 +244,6 @@ namespace FP
                 e.Graphics.DrawString(teksRuangan, font, brush, 10, 10);
             }
 
-            // Menggambar jam menggunakan GameClock
             gameClock.Draw(e.Graphics, this.ClientSize.Width);
 
             if (!string.IsNullOrEmpty(selectedItemName))
@@ -259,7 +271,7 @@ namespace FP
             {
                 roomIndex = (roomIndex + 1) % rooms.Length;
                 currentRoom = rooms[roomIndex];
-                this.Text = currentRoom.Name; // Update judul jendela dengan nama ruangan baru
+                this.Text = currentRoom.Name; 
                 Invalidate();
                 return true;
             }
@@ -267,7 +279,7 @@ namespace FP
             {
                 roomIndex = (roomIndex - 1 + rooms.Length) % rooms.Length;
                 currentRoom = rooms[roomIndex];
-                this.Text = currentRoom.Name; // Update judul jendela dengan nama ruangan baru
+                this.Text = currentRoom.Name; 
                 Invalidate();
                 return true;
             }
@@ -317,6 +329,16 @@ namespace FP
         private void GameClock_TimeUpdated(object sender, EventArgs e)
         {
             this.Invalidate(); // Meminta form untuk repaint
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            backgroundMusic?.Stop();
+            backgroundMusic?.Dispose();
+
+            gameClock?.Dispose();
+
+            base.OnFormClosing(e);
         }
     }
 }
