@@ -8,6 +8,7 @@ namespace FP
     public class GameClock
     {
         private TimeSpan gameTime;
+        public TimeSpan GameTime { get { return gameTime; } }
         private System.Windows.Forms.Timer gameTimer;
         private Font clockFont;
         private Brush backgroundBrush;
