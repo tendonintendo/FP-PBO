@@ -12,6 +12,7 @@ namespace FP
         private Size originalSize;
         private string selectedItemName;
         private bool isFullScreen = false;
+        private GameLogic logic;
 
         private int roomIndex = 0;
         private Ruangan[] rooms;
@@ -40,6 +41,7 @@ namespace FP
             {
                 MessageBox.Show($"Background image not found: {currentRoom.BackgroundImagePath}");
                 Console.WriteLine($"Invalid background path: {currentRoom.BackgroundImagePath}");
+                Application.Exit();
             }
 
             this.DoubleBuffered = true;
@@ -59,7 +61,9 @@ namespace FP
             {
                 MessageBox.Show($"Music file not found: {musicPath}");
                 Console.WriteLine($"Invalid music path: {musicPath}");
+                Application.Exit();
             }
+
         }
 
         private void InitializeRooms()
@@ -74,7 +78,7 @@ namespace FP
             // Ruangan 1
             rooms[0].AddItem(new Benda("Table", new Point(150, 600), "../../../../images/Room 1/meja_pc_awal.png", new Size(420, 220)));
             rooms[0].AddItem(new Benda("Tabletop Speaker", new Point(450, 540), "../../../../images/Room 1/speaker.png", new Size(45, 60)));
-            rooms[0].AddItem(new Benda("Lamp", new Point(450, 465), "../../../../images/Room 1/lampu_mati.png", new Size(100, 140)));
+            rooms[0].AddItem(new Benda("Lamp", new Point(450, 465), "../../../../images/Room 1/lampu_awal.png", new Size(100, 140)));
             rooms[0].AddItem(new Benda("PC", new Point(190, 375), "../../../../images/Room 1/pc_awal.png", new Size(250, 225)));
             rooms[0].AddItem(new Benda("Kursi gimang", new Point(0, 420), "../../../../images/Room 1/kursi_gaming.png", new Size(500, 470)));
             rooms[0].AddItem(new Benda("Sofa Kiri", new Point(850, 619), "../../../../images/Room 1/sofa_kiri.png", new Size(231, 198)));
@@ -95,7 +99,7 @@ namespace FP
             rooms[1].AddItem(new Benda("Sink", new Point(1008, 420), "../../../../images/Room 2/lemari.png", new Size(313, 413)));
             rooms[1].AddItem(new Benda("Mirror", new Point(1035, 139), "../../../../images/Room 2/cermin_awal.png", new Size(263, 263)));
             rooms[1].AddItem(new Benda("Toilet", new Point(1430, 404), "../../../../images/Room 2/WC.png", new Size(224, 427)));
-            rooms[1].AddItem(new Benda("Tissue", new Point(1680, 500), "../../../../images/Room 2/Tisu.png", new Size(190, 200)));
+            rooms[1].AddItem(new Benda("Tissue", new Point(1680, 500), "../../../../images/Room 2/Tisu_awal.png", new Size(190, 200)));
 
             // Ruangan 3
             rooms[2].AddItem(new Benda("kasur", new Point(335, 485), "../../../../images/Room 3/kasur.png", new Size(696, 348)));
@@ -107,6 +111,8 @@ namespace FP
             rooms[2].AddItem(new Benda("Banteng", new Point(1100, 200), "../../../../images/Room 3/banteng.png", new Size(340, 180)));
             rooms[2].AddItem(new Benda("Lemari", new Point(1470, 184), "../../../../images/Room 3/lemari.png", new Size(390, 650)));
 
+            logic = new GameLogic(rooms);
+            
             // Set ruangan pertama yang aktif
             currentRoom = rooms[roomIndex];
         }
@@ -117,7 +123,6 @@ namespace FP
 
             float scaleX = (float)this.ClientSize.Width / originalSize.Width;
             float scaleY = (float)this.ClientSize.Height / originalSize.Height;
-
             float scale = Math.Min(scaleX, scaleY);
 
             float scaledBgWidth = originalSize.Width * scale;
@@ -138,15 +143,39 @@ namespace FP
 
                 if (itemRect.Contains(e.Location))
                 {
-                    selectedItemName = item.Name;
-                    Invalidate();
-                    return;
+                    if (IsPixelOpaque(item.ImagePath, e.Location, itemRect))
+                    {
+                        selectedItemName = item.Name;
+                        Invalidate();
+                        return;
+                    }
                 }
             }
 
             selectedItemName = null;
             Invalidate();
         }
+        private bool IsPixelOpaque(string imagePath, Point mousePoint, RectangleF itemRect)
+        {
+            if (!File.Exists(imagePath)) return false;
+
+            using (Bitmap bitmap = new Bitmap(imagePath))
+            {
+                float scaleX = bitmap.Width / itemRect.Width;
+                float scaleY = bitmap.Height / itemRect.Height;
+
+                int pixelX = (int)((mousePoint.X - itemRect.X) * scaleX);
+                int pixelY = (int)((mousePoint.Y - itemRect.Y) * scaleY);
+
+                if (pixelX >= 0 && pixelX < bitmap.Width && pixelY >= 0 && pixelY < bitmap.Height)
+                {
+                    Color color = bitmap.GetPixel(pixelX, pixelY);
+                    return color.A != 0;  // Check if the pixel is not transparent
+                }
+            }
+            return false;
+        }
+
 
         private void MainForm_MouseMove(object sender, MouseEventArgs e)
         {
@@ -326,12 +355,13 @@ namespace FP
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
-            backgroundMusic?.Stop();
-            backgroundMusic?.Dispose();
+            //backgroundMusic?.Stop();
+            //backgroundMusic?.Dispose();
 
-            gameClock?.Dispose();
+            //gameClock?.Dispose();
 
-            base.OnFormClosing(e);
+            //base.OnFormClosing(e);
+            Application.Exit();
         }
     }
 }
