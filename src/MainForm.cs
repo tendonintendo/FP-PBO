@@ -1,5 +1,4 @@
-﻿// MainForm.cs
-using System;
+﻿using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
@@ -287,12 +286,6 @@ namespace FP
             if (keyData == Keys.F11)
             {
                 ToggleFullScreen();
-                return true;
-            }
-
-            if (keyData == Keys.Escape)
-            {
-                ExitFullScreen();
                 return true;
             }
 

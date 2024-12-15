@@ -1,16 +1,21 @@
+// Program.cs
 using System;
 using System.Windows.Forms;
 
 namespace FP
 {
-    internal static class Program
+    static class Program
     {
+        /// <summary>
+        /// Titik masuk aplikasi.
+        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            // Ganti MainForm dengan HomeForm
+            Application.Run(new HomeForm());
         }
     }
 }
