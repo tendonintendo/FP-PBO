@@ -80,8 +80,8 @@ namespace FP
             // Ruangan 1
             rooms[0].AddItem(new Benda("Table", new Point(150, 600), "../../../../images/Room 1/meja_pc_awal.png", new Size(420, 220)));
             rooms[0].AddItem(new Benda("Tabletop Speaker", new Point(450, 540), "../../../../images/Room 1/speaker.png", new Size(45, 60)));
-            rooms[0].AddItem(new Benda("Lamp", new Point(450, 465), "../../../../images/Room 1/lampu_awal.png", new Size(100, 140)));
             rooms[0].AddItem(new Benda("PC", new Point(190, 375), "../../../../images/Room 1/pc_awal.png", new Size(250, 225)));
+            rooms[0].AddItem(new Benda("Lamp", new Point(450, 465), "../../../../images/Room 1/lampu_awal.png", new Size(100, 140))); //point lampu akhir = 358,465; size = 147,140
             rooms[0].AddItem(new Benda("Kursi gimang", new Point(0, 420), "../../../../images/Room 1/kursi_gaming.png", new Size(500, 470)));
             rooms[0].AddItem(new Benda("Sofa Kiri", new Point(850, 619), "../../../../images/Room 1/sofa_kiri.png", new Size(231, 198)));
             rooms[0].AddItem(new Benda("Speaker", new Point(1630, 477), "../../../../images/Room 1/speaker.png", new Size(230, 340)));
@@ -95,7 +95,7 @@ namespace FP
             // Ruangan 2
             rooms[1].AddItem(new Benda("Bathtub shelf", new Point(583, 315), "../../../../images/Room 2/rak_bathup_awal.png", new Size(220, 153)));
             rooms[1].AddItem(new Benda("Bathtub", new Point(220, 215), "../../../../images/Room 2/bathup.png", new Size(600, 630)));
-            rooms[1].AddItem(new Benda("Trash can", new Point(27, 625), "../../../../images/Room 2/tempat_sampah_awal.png", new Size(200, 220)));
+            rooms[1].AddItem(new Benda("Trash can", new Point(27, 625), "../../../../images/Room 2/tempat_sampah_awal.png", new Size(200, 220))); //172,193 = size tempat sampah akhir, position = 30, 625
             rooms[1].AddItem(new Benda("Shelf", new Point(15, 175), "../../../../images/Room 2/rak_kiri_awal.png", new Size(200, 420)));
             rooms[1].AddItem(new Benda("Towel", new Point(860, 412), "../../../../images/Room 2/serbet.png", new Size(98, 253)));
             rooms[1].AddItem(new Benda("Sink", new Point(1008, 420), "../../../../images/Room 2/lemari.png", new Size(313, 413)));
