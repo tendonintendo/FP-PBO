@@ -49,6 +49,14 @@ namespace FP
             {
                 _changeables[num].ImageSize = new Size(130, 25);
                 _changeables[num].Position = new Point(1680, 570);
+            } else if(_changeables[num].Name == "Lamp")
+            {
+                _changeables[num].ImageSize = new Size(147, 140);
+                _changeables[num].Position = new Point(358, 465);
+            } else if(_changeables[num].Name == "Trash can")
+            {
+                _changeables[num].ImageSize = new Size(172, 193);
+                _changeables[num].Position = new Point(30, 625);
             }
             MessageBox.Show($"Transformed: {_changeables[num].Name}");
             _history.Add(num);
