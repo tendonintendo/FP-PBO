@@ -14,6 +14,7 @@ namespace FP
         private Random _rnd;
         private CancellationTokenSource _cts;
         private GameClock _gameClock;
+        private HashSet<int> _history;
 
         public GameLogic(Ruangan[] rooms, GameClock gameClock)
         {
@@ -33,6 +34,7 @@ namespace FP
                     }
                 }
             }
+            _history = new HashSet<int>();
             StartRandomTransform();
         }
 
@@ -41,6 +43,7 @@ namespace FP
             if (_changeables.Count == 0) return;
 
             int num = _rnd.Next(0, _changeables.Count);
+            while (_history.Contains(num)) { num = _rnd.Next(0, _changeables.Count); }
             _changeables[num].ImagePath = _changeables[num].ImagePath.Replace("awal", "akhir");
             if (_changeables[num].Name == "Tissue")
             {
@@ -48,6 +51,7 @@ namespace FP
                 _changeables[num].Position = new Point(1680, 570);
             }
             MessageBox.Show($"Transformed: {_changeables[num].Name}");
+            _history.Add(num);
             countChanges++;
         }
 
@@ -58,6 +62,7 @@ namespace FP
                 _cts.Dispose();
             }
             _cts = new CancellationTokenSource();
+            _history.Clear();
             countChanges = 0;
             StartRandomTransform();
         }
