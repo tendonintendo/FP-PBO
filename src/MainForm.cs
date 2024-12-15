@@ -48,9 +48,9 @@ namespace FP
         {
             rooms = new Ruangan[]
             {
-                new Ruangan("Ruangan 1", "../../../../images/Room 1/bg.png"),
-                new Ruangan("Ruangan 2", "../../../../images/Room 2/bg.png"),
-                new Ruangan("Ruangan 3", "../../../../images/Room 3/bg.png")
+                new Ruangan("Gaming Room", "../../../../images/Room 1/bg.png"),
+                new Ruangan("Bathroom", "../../../../images/Room 2/bg.png"),
+                new Ruangan("Bedroom", "../../../../images/Room 3/bg.png")
             };
 
             // Ruangan 1
@@ -216,6 +216,13 @@ namespace FP
                     MessageBox.Show($"Item image not found: {item.ImagePath}");
                     Console.WriteLine($"Invalid item path: {item.ImagePath}");
                 }
+            }
+
+            using (Font font = new Font("Comic Sans MS", 20, FontStyle.Bold))
+            using (Brush brush = new SolidBrush(Color.Black))
+            {
+                string teksRuangan = $"{currentRoom.Name}";
+                e.Graphics.DrawString(teksRuangan, font, brush, 10, 10);
             }
 
             if (!string.IsNullOrEmpty(selectedItemName))
