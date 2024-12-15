@@ -4,6 +4,7 @@
   "Documents": [
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp\\src\\gameclock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:gameclock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -48,6 +49,21 @@
     {
       "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\fp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
 >>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
+=======
+      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\fp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+>>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
       "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:fp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
@@ -63,7 +79,11 @@
         {
           "DockedWidth": 200,
 <<<<<<< HEAD
+<<<<<<< HEAD
           "SelectedChildIndex": 5,
+=======
+          "SelectedChildIndex": 1,
+>>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
 =======
           "SelectedChildIndex": 1,
 >>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
@@ -75,6 +95,7 @@
             {
               "$type": "Document",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "TransparentTableLayoutPanel.cs",
               "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\TransparentTableLayoutPanel.cs",
@@ -83,6 +104,8 @@
               "RelativeToolTip": "TransparentTableLayoutPanel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
 =======
+=======
+>>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
               "DocumentIndex": 0,
               "Title": "GameLogic.cs",
               "DocumentMoniker": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\GameLogic.cs",
@@ -90,6 +113,9 @@
               "ToolTip": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\GameLogic.cs",
               "RelativeToolTip": "GameLogic.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAYwEAAAAAcAAAAAAAAAA==",
+<<<<<<< HEAD
+>>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
+=======
 >>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-15T08:02:21.722Z",
@@ -97,6 +123,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
 <<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "HomeForm.cs [Design]",
@@ -113,6 +140,9 @@
 =======
               "DocumentIndex": 2,
 >>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
+=======
+              "DocumentIndex": 2,
+>>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
               "Title": "HomeForm.cs",
               "DocumentMoniker": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\HomeForm.cs",
               "RelativeDocumentMoniker": "HomeForm.cs",
@@ -124,6 +154,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
 <<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "HomeForm.Designer.cs",
@@ -140,6 +171,8 @@
               "$type": "Document",
               "DocumentIndex": 5,
 =======
+=======
+>>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
               "DocumentIndex": 4,
 >>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
               "Title": "BackgroundMusic.cs",
@@ -153,6 +186,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
 <<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "GameClock.cs",
@@ -171,6 +205,9 @@
 =======
               "DocumentIndex": 3,
 >>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
+=======
+              "DocumentIndex": 3,
+>>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
               "Title": "FP.csproj",
               "DocumentMoniker": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\FP.csproj",
               "RelativeDocumentMoniker": "FP.csproj",
@@ -184,7 +221,11 @@
             {
               "$type": "Document",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "DocumentIndex": 6,
+=======
+              "DocumentIndex": 1,
+>>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
 =======
               "DocumentIndex": 1,
 >>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411

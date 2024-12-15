@@ -54,3 +54,9 @@ C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\obj\Debug\net8.
 C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\obj\Debug\net8.0-windows\Interop.WMPDXMLib.dll
 C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\obj\Debug\net8.0-windows\FP.csproj.ResolveComReference.cache
 C:\Users\dyanw\OneDrive\Documents\CODING DULU GA SEHH\PBO\FP\src\obj\Debug\net8.0-windows\FP.HomeForm.resources
+C:\Users\Muhammad Rengga\Downloads\school\PBO\FP\FP-PBO\src\obj\Debug\net8.0-windows\Interop.WMPLib.dll
+C:\Users\Muhammad Rengga\Downloads\school\PBO\FP\FP-PBO\src\obj\Debug\net8.0-windows\Interop.MediaPlayer.dll
+C:\Users\Muhammad Rengga\Downloads\school\PBO\FP\FP-PBO\src\obj\Debug\net8.0-windows\Interop.WMPLauncher.dll
+C:\Users\Muhammad Rengga\Downloads\school\PBO\FP\FP-PBO\src\obj\Debug\net8.0-windows\Interop.WMPDXMLib.dll
+C:\Users\Muhammad Rengga\Downloads\school\PBO\FP\FP-PBO\src\obj\Debug\net8.0-windows\FP.csproj.ResolveComReference.cache
+C:\Users\Muhammad Rengga\Downloads\school\PBO\FP\FP-PBO\src\obj\Debug\net8.0-windows\FP.HomeForm.resources

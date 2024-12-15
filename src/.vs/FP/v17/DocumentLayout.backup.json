@@ -4,6 +4,7 @@
   "Documents": [
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp\\src\\transparenttablelayoutpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:transparenttablelayoutpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,6 +26,13 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp\\src\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
 =======
       "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -55,6 +63,7 @@
         {
           "DockedWidth": 200,
 <<<<<<< HEAD
+<<<<<<< HEAD
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -76,6 +85,13 @@
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
 >>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
+=======
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+>>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
             },
             {
               "$type": "Document",
@@ -88,7 +104,12 @@
               "ViewState": "AgIAADQAAAAAAAAAAAAqwD4AAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "WhenOpened": "2024-12-15T05:41:04.828Z"
+=======
+              "WhenOpened": "2024-12-15T08:02:21.722Z",
+              "EditorCaption": ""
+>>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
 =======
               "WhenOpened": "2024-12-15T08:02:21.722Z",
               "EditorCaption": ""
@@ -103,7 +124,11 @@
               "ToolTip": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\HomeForm.cs",
               "RelativeToolTip": "HomeForm.cs",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "ViewState": "AgIAADcAAAAAAAAAAAAkwAgAAAAFAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+>>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
 =======
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
 >>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
@@ -112,6 +137,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
 <<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "HomeForm.Designer.cs",
@@ -126,6 +152,8 @@
             },
             {
               "$type": "Document",
+=======
+>>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
 =======
 >>>>>>> 2b964b177fc1469b8fecdc46aaacc03db1d64411
               "DocumentIndex": 4,
