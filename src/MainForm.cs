@@ -12,6 +12,7 @@ namespace FP
         private Size originalSize;
         private string selectedItemName;
         private bool isFullScreen = false;
+        private GameLogic logic;
 
         private int roomIndex = 0;
         private Ruangan[] rooms;
@@ -110,6 +111,8 @@ namespace FP
             rooms[2].AddItem(new Benda("Banteng", new Point(1100, 200), "../../../../images/Room 3/banteng.png", new Size(340, 180)));
             rooms[2].AddItem(new Benda("Lemari", new Point(1470, 184), "../../../../images/Room 3/lemari.png", new Size(390, 650)));
 
+            logic = new GameLogic(rooms);
+            
             // Set ruangan pertama yang aktif
             currentRoom = rooms[roomIndex];
         }

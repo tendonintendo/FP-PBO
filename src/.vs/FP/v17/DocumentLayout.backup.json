@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\fp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,20 +38,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Logic.cs",
-              "DocumentMoniker": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\Logic.cs",
-              "RelativeDocumentMoniker": "Logic.cs",
-              "ToolTip": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\Logic.cs",
-              "RelativeToolTip": "Logic.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAABfAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "GameLogic.cs",
+              "DocumentMoniker": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\GameLogic.cs",
+              "RelativeDocumentMoniker": "GameLogic.cs",
+              "ToolTip": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\GameLogic.cs",
+              "RelativeToolTip": "GameLogic.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAqwD4AAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-15T08:02:21.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HomeForm.cs",
               "DocumentMoniker": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\HomeForm.cs",
               "RelativeDocumentMoniker": "HomeForm.cs",
@@ -90,13 +90,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAANsAAAAAAAAAAAAIwAoAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-30T13:39:15.221Z",
               "EditorCaption": ""
