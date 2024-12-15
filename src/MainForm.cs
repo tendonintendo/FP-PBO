@@ -51,6 +51,8 @@ namespace FP
             gameClock = new GameClock();
             gameClock.TimeUpdated += GameClock_TimeUpdated;
 
+            logic = new GameLogic(rooms, gameClock);
+
             string musicPath = Path.GetFullPath(Path.Combine(Application.StartupPath, "../../../../music/music1.mp3"));
             if (File.Exists(musicPath))
             {
@@ -98,8 +100,8 @@ namespace FP
             rooms[1].AddItem(new Benda("Towel", new Point(860, 412), "../../../../images/Room 2/serbet.png", new Size(98, 253)));
             rooms[1].AddItem(new Benda("Sink", new Point(1008, 420), "../../../../images/Room 2/lemari.png", new Size(313, 413)));
             rooms[1].AddItem(new Benda("Mirror", new Point(1035, 139), "../../../../images/Room 2/cermin_awal.png", new Size(263, 263)));
-            rooms[1].AddItem(new Benda("Toilet", new Point(1430, 404), "../../../../images/Room 2/WC.png", new Size(224, 427)));
-            rooms[1].AddItem(new Benda("Tissue", new Point(1680, 500), "../../../../images/Room 2/Tisu_awal.png", new Size(190, 200)));
+            rooms[1].AddItem(new Benda("Toilet", new Point(1430, 404), "../../../../images/Room 2/WC.png", new Size(224, 427))); 
+            rooms[1].AddItem(new Benda("Tissue", new Point(1680, 500), "../../../../images/Room 2/Tisu_awal.png", new Size(150, 200))); //130, 25 = size tisu akhir; point = 1680, 570
 
             // Ruangan 3
             rooms[2].AddItem(new Benda("kasur", new Point(335, 485), "../../../../images/Room 3/kasur.png", new Size(696, 348)));
@@ -110,8 +112,6 @@ namespace FP
             rooms[2].AddItem(new Benda("Perapian", new Point(1055, 403), "../../../../images/Room 3/perapian.png", new Size(420, 430)));
             rooms[2].AddItem(new Benda("Banteng", new Point(1100, 200), "../../../../images/Room 3/banteng.png", new Size(340, 180)));
             rooms[2].AddItem(new Benda("Lemari", new Point(1470, 184), "../../../../images/Room 3/lemari.png", new Size(390, 650)));
-
-            logic = new GameLogic(rooms);
             
             // Set ruangan pertama yang aktif
             currentRoom = rooms[roomIndex];
@@ -356,11 +356,13 @@ namespace FP
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             //backgroundMusic?.Stop();
-            //backgroundMusic?.Dispose();
+            backgroundMusic?.Dispose();
 
-            //gameClock?.Dispose();
+            gameClock?.Dispose();
 
-            //base.OnFormClosing(e);
+            logic?.StopTransforming();
+
+            base.OnFormClosing(e);
             Application.Exit();
         }
     }

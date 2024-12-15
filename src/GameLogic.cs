@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace FP
 {
@@ -14,13 +13,15 @@ namespace FP
         private List<Benda> _changeables;
         private Random _rnd;
         private CancellationTokenSource _cts;
+        private GameClock _gameClock;
 
-        public GameLogic(Ruangan[] rooms)
+        public GameLogic(Ruangan[] rooms, GameClock gameClock)
         {
             _rooms = rooms;
             _changeables = new List<Benda>();
             _rnd = new Random();
             _cts = new CancellationTokenSource();
+            _gameClock = gameClock;
 
             foreach (Ruangan room in _rooms)
             {
@@ -41,6 +42,11 @@ namespace FP
 
             int num = _rnd.Next(0, _changeables.Count);
             _changeables[num].ImagePath = _changeables[num].ImagePath.Replace("awal", "akhir");
+            if (_changeables[num].Name == "Tissue")
+            {
+                _changeables[num].ImageSize = new Size(130, 25);
+                _changeables[num].Position = new Point(1680, 570);
+            }
             MessageBox.Show($"Transformed: {_changeables[num].Name}");
             countChanges++;
         }
@@ -60,16 +66,42 @@ namespace FP
         {
             while (!_cts.Token.IsCancellationRequested)
             {
-                int delay = _rnd.Next(10000, 20000); //ini transform tiap 10-20 detik, masih testing
-                await Task.Delay(delay, _cts.Token);
+                int delayMinutes = _rnd.Next(20, 31);
+
+                TimeSpan targetTime = _gameClock.GameTime.Add(new TimeSpan(0, delayMinutes, 0));
+
+                while (_gameClock.GameTime < targetTime)
+                {
+                    await Task.Delay(100);
+                }
+
                 Transform();
-                if (countChanges == 3) { StopTransforming(); }
+
+                if (countChanges == 3)
+                {
+                    await StopTransforming();
+                }
             }
         }
 
-        public void StopTransforming()
+        public void LoseMessage()
+        {
+            MessageBox.Show("You Lose!");
+        }
+
+
+        public async Task StopTransforming()
         {
             _cts.Cancel();
+
+            TimeSpan loseClock = _gameClock.GameTime.Add(new TimeSpan(0, 30, 0)); // set timer 30 menit
+            while (_gameClock.GameTime < loseClock)
+            {
+                await Task.Delay(100);
+            }
+
+            LoseMessage();
         }
+
     }
 }
