@@ -26,6 +26,7 @@ namespace FP
             {
                 EnterFullScreen();
             }
+            this.Invalidate();
         }
 
         protected void EnterFullScreen()

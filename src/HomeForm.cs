@@ -10,7 +10,9 @@ namespace FP
         public HomeForm()
         {
             InitializeComponent();
-            EnterFullScreen();
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+            this.TopMost = true;
             this.KeyPreview = true;
             this.KeyDown += HomeForm_KeyDown;
             LoadBackgroundImage("../../../../images/Main Menu/bg.jpg");
@@ -29,6 +31,21 @@ namespace FP
             GameForm gameForm = new GameForm();
             gameForm.Show();
             this.Hide();
+        }
+        private void HomeForm_Load(object sender, EventArgs e)
+        {
+            string relativePath = "../../../../images/Main Menu/bg.jpg";
+            string bgPath = Path.GetFullPath(Path.Combine(Application.StartupPath, relativePath));
+            if (File.Exists(bgPath))
+            {
+                this.BackgroundImage = Image.FromFile(bgPath);
+                this.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+            else
+            {
+                MessageBox.Show($"Background image not found: {bgPath}");
+                Console.WriteLine($"Invalid background path: {bgPath}");
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
