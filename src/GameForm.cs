@@ -403,7 +403,7 @@ namespace FP
                     SizeF textSize = e.Graphics.MeasureString(selectedItemName, font);
                     float textX = (this.ClientSize.Width - textSize.Width) / 2;
                     float textY = 10;
-                    e.Graphics.DrawString(selectedItemName, font, brush, textX, textY);
+                    //e.Graphics.DrawString(selectedItemName, font, brush, textX, textY);
                 }
             }
         }
