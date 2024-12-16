@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,7 @@ namespace FP
         private CancellationTokenSource _cts;
         private GameClock _gameClock;
         private HashSet<int> _history;
+        private TimeSpan _endGame;
 
         public GameLogic(Ruangan[] rooms, GameClock gameClock)
         {
@@ -35,6 +37,7 @@ namespace FP
                 }
             }
             _history = new HashSet<int>();
+            _endGame = new TimeSpan(3, 0, 0);
             StartRandomTransform();
         }
 
@@ -63,21 +66,24 @@ namespace FP
             countChanges++;
         }
 
-        public void ResetLogic()
+        public void ResetLogic(bool hardReset)
         {
             if (_cts != null)
             {
                 _cts.Dispose();
             }
             _cts = new CancellationTokenSource();
-            _history.Clear();
-            countChanges = 0;
+            if(hardReset)
+            {
+                _history.Clear();
+                countChanges = 0;
+            }
             StartRandomTransform();
         }
 
         private async void StartRandomTransform()
         {
-            while (!_cts.Token.IsCancellationRequested)
+            while (!_cts.Token.IsCancellationRequested && _gameClock.GameTime < _endGame)
             {
                 int delayMinutes = _rnd.Next(20, 31);
 
@@ -89,12 +95,13 @@ namespace FP
                 }
 
                 Transform();
-
+                await Task.Delay(100);
                 if (countChanges == 3)
                 {
-                    await StopTransforming();
+                    await StopTransforming(false);
                 }
             }
+            await StopTransforming(true);
         }
 
         public bool IsItemChanged(string itemName)
@@ -103,12 +110,34 @@ namespace FP
             {
                 if (_changeables[i].Name.Equals(itemName, StringComparison.OrdinalIgnoreCase))
                 {
-                    return _history.Contains(i);
+                    _changeables[i].ImagePath = _changeables[i].ImagePath.Replace("akhir", "awal");
+                    if (_changeables[i].Name == "Tissue")
+                    {
+                        _changeables[i].ImageSize = new Size(150, 200);
+                        _changeables[i].Position = new Point(1680, 500);
+                    }
+                    else if (_changeables[i].Name == "Lamp")
+                    {
+                        _changeables[i].ImageSize = new Size(100, 140);
+                        _changeables[i].Position = new Point(450, 465);
+                    }
+                    else if (_changeables[i].Name == "Trash can")
+                    {
+                        _changeables[i].ImageSize = new Size(200, 220);
+                        _changeables[i].Position = new Point(27, 625);
+                    }
+                    _history.Remove(i);
+                    countChanges--;
+                    return true;
                 }
             }
             return false;
         }
-
+        
+        public void WinMessage()
+        {
+            MessageBox.Show("You Won!");
+        }
 
         public void LoseMessage()
         {
@@ -116,16 +145,22 @@ namespace FP
         }
 
 
-        public async Task StopTransforming()
+        public async Task StopTransforming(bool win)
         {
+            if (win)
+            {
+                WinMessage();
+                return;
+            }
             _cts.Cancel();
 
             TimeSpan loseClock = _gameClock.GameTime.Add(new TimeSpan(0, 30, 0)); // set timer 30 menit
-            while (_gameClock.GameTime < loseClock)
+            while (_gameClock.GameTime < loseClock && countChanges == 3)
             {
                 await Task.Delay(100);
             }
 
+            if(countChanges < 3) { ResetLogic(false); }
             LoseMessage();
         }
 

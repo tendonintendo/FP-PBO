@@ -23,7 +23,7 @@ namespace FP
         public GameClock()
         {
             // Inisialisasi waktu game mulai dari 12:00
-            gameTime = new TimeSpan(12, 0, 0);
+            gameTime = new TimeSpan(0, 0, 0);
 
             gameTimer = new System.Windows.Forms.Timer(); 
             gameTimer.Interval = 1000; // 1 detik
