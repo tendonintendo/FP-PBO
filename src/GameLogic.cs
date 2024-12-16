@@ -17,6 +17,7 @@ namespace FP
         private GameClock _gameClock;
         private HashSet<int> _history;
         private TimeSpan _endGame;
+        private TimeSpan _penaltyTime;
 
         public GameLogic(Ruangan[] rooms, GameClock gameClock)
         {
@@ -66,18 +67,17 @@ namespace FP
             countChanges++;
         }
 
-        public void ResetLogic(bool hardReset)
+        public void ResetLogic()
         {
             if (_cts != null)
             {
                 _cts.Dispose();
             }
             _cts = new CancellationTokenSource();
-            if(hardReset)
-            {
-                _history.Clear();
-                countChanges = 0;
-            }
+            
+            _history.Clear();
+            countChanges = 0;
+            
             StartRandomTransform();
         }
 
@@ -98,10 +98,16 @@ namespace FP
                 await Task.Delay(100);
                 if (countChanges == 3)
                 {
-                    await StopTransforming(false);
+                    await StopTransforming();
                 }
             }
-            await StopTransforming(true);
+            WinMessage();
+        }
+
+        public bool isPenalty()
+        {
+            if (_gameClock.GameTime < _penaltyTime) return true;
+            return false;
         }
 
         public bool IsItemChanged(string itemName)
@@ -110,6 +116,10 @@ namespace FP
             {
                 if (_changeables[i].Name.Equals(itemName, StringComparison.OrdinalIgnoreCase))
                 {
+                    if (!_changeables[i].ImagePath.Contains("_akhir"))
+                    {
+                        break;
+                    }
                     _changeables[i].ImagePath = _changeables[i].ImagePath.Replace("akhir", "awal");
                     if (_changeables[i].Name == "Tissue")
                     {
@@ -131,6 +141,7 @@ namespace FP
                     return true;
                 }
             }
+            _penaltyTime = _gameClock.GameTime.Add(new TimeSpan(0, 5, 0));
             return false;
         }
         
@@ -145,22 +156,21 @@ namespace FP
         }
 
 
-        public async Task StopTransforming(bool win)
+        public async Task StopTransforming()
         {
-            if (win)
-            {
-                WinMessage();
-                return;
-            }
-            _cts.Cancel();
 
             TimeSpan loseClock = _gameClock.GameTime.Add(new TimeSpan(0, 30, 0)); // set timer 30 menit
-            while (_gameClock.GameTime < loseClock && countChanges == 3)
+            while (_gameClock.GameTime < loseClock && countChanges >= 3)
             {
                 await Task.Delay(100);
             }
 
-            if(countChanges < 3) { ResetLogic(false); }
+            if (countChanges < 3)
+            {
+                return;
+            }
+
+            _cts.Cancel();
             LoseMessage();
         }
 

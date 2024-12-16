@@ -246,25 +246,26 @@ namespace FP
 
         private void ReportButton_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(reportItemName))
+            bool isPenalty = logic.isPenalty();
+
+            if (!isPenalty)
             {
                 bool isChanged = logic.IsItemChanged(reportItemName);
-
                 if (isChanged)
                 {
                     MessageBox.Show("Berhasil di report!", "Report", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                } 
                 else
                 {
                     MessageBox.Show("Belum ada perubahan!", "Report", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-
-                HideReportButton();
             }
             else
             {
-                MessageBox.Show("Belum ada perubahan!", "Report", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Sedang dalam penalty!", "Report", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
+            HideReportButton();
         }
 
         private bool IsPixelOpaque(string imagePath, Point mousePoint, RectangleF itemRect)
