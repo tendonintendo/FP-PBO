@@ -39,7 +39,7 @@ namespace FP
                 }
             }
             _history = new HashSet<int>();
-            _endGame = new TimeSpan(2, 0, 0);
+            _endGame = new TimeSpan(6, 0, 0);
             _ended = false;
             StartRandomTransform();
         }

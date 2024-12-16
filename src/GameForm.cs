@@ -383,6 +383,7 @@ namespace FP
                 {
                     MessageBox.Show($"Item image not found: {item.ImagePath}");
                     Console.WriteLine($"Invalid item path: {item.ImagePath}");
+                    Application.Exit();
                 }
             }
 

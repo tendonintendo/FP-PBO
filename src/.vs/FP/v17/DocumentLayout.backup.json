@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP-PBO\\src\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp-pbo\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp-pbo\\src\\loseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:loseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp-pbo\\src\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp-pbo\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp-pbo\\src\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -68,20 +68,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP-PBO\\src\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP-PBO\\src\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T13:51:41.64Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "HomeForm.cs",
               "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP-PBO\\src\\HomeForm.cs",
               "RelativeDocumentMoniker": "HomeForm.cs",
@@ -94,20 +94,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LoseForm.cs",
               "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP-PBO\\src\\LoseForm.cs",
               "RelativeDocumentMoniker": "LoseForm.cs",
               "ToolTip": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP-PBO\\src\\LoseForm.cs",
               "RelativeToolTip": "LoseForm.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAkwC4AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAkwCkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T13:33:16.036Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GameForm.cs",
               "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP-PBO\\src\\GameForm.cs",
               "RelativeDocumentMoniker": "GameForm.cs",
