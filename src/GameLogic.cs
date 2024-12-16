@@ -38,7 +38,7 @@ namespace FP
                 }
             }
             _history = new HashSet<int>();
-            _endGame = new TimeSpan(3, 0, 0);
+            _endGame = new TimeSpan(6, 0, 0);
             StartRandomTransform();
         }
 
