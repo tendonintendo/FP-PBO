@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing; // Make sure to include this namespace
 using System.IO; // For Path
-using System.Windows.Forms; // For Button, MessageBox, etc.
+using System.Windows.Forms; 
+using WinTimer = System.Windows.Forms.Timer; 
 
 namespace FP
 {
@@ -24,6 +25,15 @@ namespace FP
         private Button reportButton;
         private bool isPopupVisible = false;
 
+        //animasi report
+        private WinTimer animationTimer; 
+        private bool isAnimating = false;
+        private int animationStep = 0;
+        private const int maxAnimationSteps = 10; // Jumlah langkah animasi
+        private Size finalSize; // Ukuran akhir tombol
+        private Point finalLocation; // Lokasi akhir tombol
+
+
         public GameForm()
         {
             InitializeRooms();
@@ -37,13 +47,18 @@ namespace FP
             reportButton.ForeColor = Color.White;
             reportButton.FlatStyle = FlatStyle.Flat;
             reportButton.FlatAppearance.BorderSize = 0;
-            reportButton.AutoSize = true;
+            reportButton.AutoSize = false;
+            reportButton.Size = new Size(100, 40);
             reportButton.Padding = new Padding(10, 5, 10, 5);
             reportButton.Font = new Font("Arial", 12, FontStyle.Bold);
 
             reportButton.Click += ReportButton_Click;
 
             this.Controls.Add(reportButton);
+
+            animationTimer = new WinTimer();
+            animationTimer.Interval = 15; // 15 ms untuk animasi halus
+            animationTimer.Tick += AnimationTimer_Tick;
         }
 
         private void LoadGame()
@@ -162,29 +177,43 @@ namespace FP
                         else if (e.Button == MouseButtons.Right)
                         {
                             selectedItemName = null;
+
                             // Menempatkan tombol report relatif terhadap form
                             // Pastikan tombol tetap dalam batas form
                             int buttonX = e.X;
                             int buttonY = e.Y;
 
+                            // Menentukan ukuran akhir tombol
+                            finalSize = new Size(100, 40); // Sesuaikan dengan ukuran akhir yang diinginkan
+
+                            // Atur ukuran awal tombol menjadi kecil (misalnya, 0 width dan 0 height)
+                            reportButton.Size = new Size(0, 0);
+
+                            // Menentukan lokasi akhir tombol
+                            finalLocation = new Point(buttonX, buttonY);
+
                             // Penyesuaian jika tombol keluar dari sisi kanan
-                            if (buttonX + reportButton.Width > this.ClientSize.Width)
+                            if (finalLocation.X + finalSize.Width > this.ClientSize.Width)
                             {
-                                buttonX = this.ClientSize.Width - reportButton.Width - 10; // Padding 10 px
+                                finalLocation.X = this.ClientSize.Width - finalSize.Width - 10; // Padding 10 px
                             }
 
                             // Penyesuaian jika tombol keluar dari sisi bawah
-                            if (buttonY + reportButton.Height > this.ClientSize.Height)
+                            if (finalLocation.Y + finalSize.Height > this.ClientSize.Height)
                             {
-                                buttonY = this.ClientSize.Height - reportButton.Height - 10; // Padding 10 px
+                                finalLocation.Y = this.ClientSize.Height - finalSize.Height - 10; // Padding 10 px
                             }
 
+                            // Set lokasi awal tombol (dimana akan mulai animasi)
                             reportButton.Location = new Point(buttonX, buttonY);
+
+                            // Tampilkan tombol dan mulai animasi
                             reportButton.Visible = true;
-                            // selectedItemName = item.Name; // Hapus atau komentari baris ini
+                            isAnimating = true;
+                            animationStep = 0;
+                            animationTimer.Start();
                         }
-                        Invalidate();
-                        break;
+
                     }
                 }
             }
@@ -358,9 +387,7 @@ namespace FP
             {
                 roomIndex = keyData == Keys.Right ? (roomIndex + 1) % rooms.Length : (roomIndex - 1 + rooms.Length) % rooms.Length;
                 currentRoom = rooms[roomIndex];
-                // biar tombol reportnya ga kebawa
-                selectedItemName = null;
-                reportButton.Visible = false;
+                ClearState();
                 this.Text = currentRoom.Name;
                 Invalidate();
                 return true;
@@ -372,5 +399,50 @@ namespace FP
             }
             return base.ProcessCmdKey(ref msg, keyData);
         }
+
+        private void AnimationTimer_Tick(object sender, EventArgs e)
+        {
+            if (animationStep < maxAnimationSteps)
+            {
+                // Hitung ukuran baru secara bertahap
+                int newWidth = reportButton.Width + finalSize.Width / maxAnimationSteps;
+                int newHeight = reportButton.Height + finalSize.Height / maxAnimationSteps;
+
+                // Pastikan tidak melebihi ukuran akhir
+                if (newWidth > finalSize.Width) newWidth = finalSize.Width;
+                if (newHeight > finalSize.Height) newHeight = finalSize.Height;
+
+                reportButton.Size = new Size(newWidth, newHeight);
+
+                animationStep++;
+            }
+            else
+            {
+                // Selesai animasi
+                animationTimer.Stop();
+                isAnimating = false;
+                reportButton.Size = finalSize; // Pastikan ukuran akhir
+            }
+        }
+
+        private void HideReportButton()
+        {
+            if (isAnimating)
+            {
+                animationTimer.Stop();
+                isAnimating = false;
+            }
+            reportButton.Visible = false;
+            selectedItemName = null;
+            Invalidate();
+        }
+
+        private void ClearState()
+        {
+            selectedItemName = null;
+            HideReportButton();
+        }
+
+
     }
 }
