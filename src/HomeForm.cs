@@ -29,6 +29,7 @@ namespace FP
         private void btnStart_Click(object sender, EventArgs e)
         {
             GameForm gameForm = new GameForm();
+            gameForm.FormClosed += (s, args) => this.Show(); // Tampilkan kembali HomeForm saat GameForm ditutup
             gameForm.Show();
             this.Hide();
         }

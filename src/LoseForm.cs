@@ -27,17 +27,6 @@ namespace FP
                 Dock = DockStyle.Fill
             };
 
-            Button restartButton = new Button
-            {
-                Text = "Restart",
-                Dock = DockStyle.Left,
-                Width = 200,
-                Font = new Font("Arial", 14, FontStyle.Bold),
-                BackColor = Color.White,
-                FlatStyle = FlatStyle.Flat
-            };
-            restartButton.Click += RestartGame;
-
             Button exitButton = new Button
             {
                 Text = "Exit",
@@ -55,18 +44,12 @@ namespace FP
                 Height = 60,
                 BackColor = Color.Transparent
             };
-            buttonPanel.Controls.Add(restartButton);
             buttonPanel.Controls.Add(exitButton);
 
             this.Controls.Add(loseLabel);
             this.Controls.Add(buttonPanel);
         }
 
-        private void RestartGame(object sender, EventArgs e)
-        {
-            HomeForm homeForm = new HomeForm();
-            homeForm.Show();
-            this.Hide();
-        }
+
     }
 }

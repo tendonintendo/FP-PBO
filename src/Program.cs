@@ -15,7 +15,7 @@ namespace FP
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // Ganti MainForm dengan HomeForm
-            Application.Run(new HomeForm());
+            Application.Run(new LoseForm());
         }
     }
 }
