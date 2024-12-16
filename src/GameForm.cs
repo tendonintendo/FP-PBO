@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing; // Make sure to include this namespace
+using System.IO; // For Path
+using System.Windows.Forms; // For Button, MessageBox, etc.
 
 namespace FP
 {
@@ -16,12 +19,31 @@ namespace FP
         private GameClock gameClock;
         private BackgroundMusic backgroundMusic;
         private GameLogic logic;
+        private Panel popupPanel;
+        private Label itemNameLabel;
+        private Button reportButton;
+        private bool isPopupVisible = false;
 
         public GameForm()
         {
             InitializeRooms();
             LoadGame();
             EnterFullScreen();
+            reportButton = new Button();
+            reportButton.Text = "Report";
+            reportButton.Visible = false;
+
+            reportButton.BackColor = Color.Black;
+            reportButton.ForeColor = Color.White;
+            reportButton.FlatStyle = FlatStyle.Flat;
+            reportButton.FlatAppearance.BorderSize = 0;
+            reportButton.AutoSize = true;
+            reportButton.Padding = new Padding(10, 5, 10, 5);
+            reportButton.Font = new Font("Arial", 12, FontStyle.Bold);
+
+            reportButton.Click += ReportButton_Click;
+
+            this.Controls.Add(reportButton);
         }
 
         private void LoadGame()
@@ -115,6 +137,8 @@ namespace FP
             float offsetX = (this.ClientSize.Width - scaledBgWidth) / 2;
             float offsetY = (this.ClientSize.Height - scaledBgHeight) / 2;
 
+            bool clickedOnItem = false;
+
             foreach (var item in currentRoom.Items)
             {
                 float scaledX = offsetX + item.Position.X * scale;
@@ -129,16 +153,74 @@ namespace FP
                 {
                     if (IsPixelOpaque(item.ImagePath, e.Location, itemRect))
                     {
-                        selectedItemName = item.Name;
+                        clickedOnItem = true;
+                        if (e.Button == MouseButtons.Left)
+                        {
+                            selectedItemName = item.Name;
+                            reportButton.Visible = false; // Sembunyikan tombol report jika ada
+                        }
+                        else if (e.Button == MouseButtons.Right)
+                        {
+                            selectedItemName = null;
+                            // Menempatkan tombol report relatif terhadap form
+                            // Pastikan tombol tetap dalam batas form
+                            int buttonX = e.X;
+                            int buttonY = e.Y;
+
+                            // Penyesuaian jika tombol keluar dari sisi kanan
+                            if (buttonX + reportButton.Width > this.ClientSize.Width)
+                            {
+                                buttonX = this.ClientSize.Width - reportButton.Width - 10; // Padding 10 px
+                            }
+
+                            // Penyesuaian jika tombol keluar dari sisi bawah
+                            if (buttonY + reportButton.Height > this.ClientSize.Height)
+                            {
+                                buttonY = this.ClientSize.Height - reportButton.Height - 10; // Padding 10 px
+                            }
+
+                            reportButton.Location = new Point(buttonX, buttonY);
+                            reportButton.Visible = true;
+                            // selectedItemName = item.Name; // Hapus atau komentari baris ini
+                        }
                         Invalidate();
-                        return;
+                        break;
                     }
                 }
             }
 
-            selectedItemName = null;
-            Invalidate();
+            if (!clickedOnItem)
+            {
+                // Jika klik tidak pada item manapun, sembunyikan tombol report
+                // Juga cek jika klik bukan pada tombol report itu sendiri
+                if (!reportButton.Bounds.Contains(e.Location))
+                {
+                    reportButton.Visible = false;
+                }
+
+                selectedItemName = null;
+                Invalidate();
+            }
+            else
+            {
+                // Jika klik pada item, tapi klik kiri, juga sembunyikan tombol report
+                if (e.Button == MouseButtons.Left)
+                {
+                    reportButton.Visible = false;
+                }
+            }
         }
+
+
+        private void ReportButton_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(selectedItemName))
+            {
+                MessageBox.Show($"Report untuk item: {selectedItemName}", "Report", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                reportButton.Visible = false;
+            }
+        }
+
         private bool IsPixelOpaque(string imagePath, Point mousePoint, RectangleF itemRect)
         {
             if (!File.Exists(imagePath)) return false;
@@ -276,6 +358,9 @@ namespace FP
             {
                 roomIndex = keyData == Keys.Right ? (roomIndex + 1) % rooms.Length : (roomIndex - 1 + rooms.Length) % rooms.Length;
                 currentRoom = rooms[roomIndex];
+                // biar tombol reportnya ga kebawa
+                selectedItemName = null;
+                reportButton.Visible = false;
                 this.Text = currentRoom.Name;
                 Invalidate();
                 return true;

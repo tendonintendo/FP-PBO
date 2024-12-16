@@ -3,97 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\",
   "Documents": [
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp\\src\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\GameLogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GameLogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> 862db9156edcbd70fb4aa5744a6d4ad78d3005fb
-=======
-=======
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp\\src\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\homeform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:homeform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
->>>>>>> c0e045fee19e3869748af45c236feae4ed2cd326
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp\\src\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> 808baff1cc35972867943d57edd327a475c17fab
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp\\src\\transparenttablelayoutpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:transparenttablelayoutpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp\\src\\backgroundmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-=======
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-=======
->>>>>>> 808baff1cc35972867943d57edd327a475c17fab
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\benda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:benda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\backgroundmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
->>>>>>> 862db9156edcbd70fb4aa5744a6d4ad78d3005fb
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:backgroundmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp\\src\\gameclock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:gameclock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp\\src\\homeform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:homeform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp\\src\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\benda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:benda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\gameclock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:gameclock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\muhammad rengga\\downloads\\school\\pbo\\fp\\fp-pbo\\src\\backgroundmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:backgroundmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> c0e045fee19e3869748af45c236feae4ed2cd326
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp\\src\\fp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:fp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -103,234 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
           "SelectedChildIndex": 0,
-=======
-          "SelectedChildIndex": 7,
->>>>>>> c0e045fee19e3869748af45c236feae4ed2cd326
           "Children": [
             {
               "$type": "Document",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "DocumentIndex": 1,
-              "Title": "TransparentTableLayoutPanel.cs",
-              "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\TransparentTableLayoutPanel.cs",
-              "RelativeDocumentMoniker": "TransparentTableLayoutPanel.cs",
-              "ToolTip": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\TransparentTableLayoutPanel.cs",
-              "RelativeToolTip": "TransparentTableLayoutPanel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T05:54:07.803Z",
-=======
-              "DocumentIndex": 2,
-=======
               "DocumentIndex": 0,
->>>>>>> 808baff1cc35972867943d57edd327a475c17fab
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\MainForm.cs",
-              "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\MainForm.cs",
-              "RelativeToolTip": "MainForm.cs",
-<<<<<<< HEAD
-              "ViewState": "AgIAAE4AAAAAAAAAAAAYwGEAAAB1AAAAAAAAAA==",
-=======
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwAsAAAA5AAAAAAAAAA==",
->>>>>>> c0e045fee19e3869748af45c236feae4ed2cd326
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T13:39:15.221Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 3,
-=======
-              "DocumentIndex": 2,
-              "Title": "HomeForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\HomeForm.Designer.cs",
-              "RelativeDocumentMoniker": "HomeForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\HomeForm.Designer.cs",
-              "RelativeToolTip": "HomeForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T17:57:02.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "GameForm.cs",
-              "DocumentMoniker": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\GameForm.cs",
+              "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\GameForm.cs",
               "RelativeDocumentMoniker": "GameForm.cs",
-              "ToolTip": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\GameForm.cs",
+              "ToolTip": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\GameForm.cs",
               "RelativeToolTip": "GameForm.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwJwAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAALUAAAAAAAAAAAAuwKMAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T17:32:29.371Z",
+              "WhenOpened": "2024-12-15T23:44:05.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
->>>>>>> c0e045fee19e3869748af45c236feae4ed2cd326
-              "Title": "Benda.cs",
-              "DocumentMoniker": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\Benda.cs",
-              "RelativeDocumentMoniker": "Benda.cs",
-              "ToolTip": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\Benda.cs",
-              "RelativeToolTip": "Benda.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T09:48:05.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 2,
-=======
-              "DocumentIndex": 5,
->>>>>>> c0e045fee19e3869748af45c236feae4ed2cd326
-              "Title": "GameClock.cs",
-              "DocumentMoniker": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\GameClock.cs",
-              "RelativeDocumentMoniker": "GameClock.cs",
-              "ToolTip": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\GameClock.cs",
-              "RelativeToolTip": "GameClock.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAYwB0AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T08:50:04.751Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 1,
-=======
-              "DocumentIndex": 6,
->>>>>>> c0e045fee19e3869748af45c236feae4ed2cd326
-              "Title": "GameLogic.cs",
-              "DocumentMoniker": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\GameLogic.cs",
-              "RelativeDocumentMoniker": "GameLogic.cs",
-              "ToolTip": "C:\\Users\\Muhammad Rengga\\Downloads\\school\\PBO\\FP\\FP-PBO\\src\\GameLogic.cs",
-              "RelativeToolTip": "GameLogic.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwDoAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T08:02:21.722Z",
->>>>>>> 862db9156edcbd70fb4aa5744a6d4ad78d3005fb
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeForm.cs",
-              "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\HomeForm.cs",
-              "RelativeDocumentMoniker": "HomeForm.cs",
-              "ToolTip": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\HomeForm.cs",
-              "RelativeToolTip": "HomeForm.cs",
-<<<<<<< HEAD
-              "ViewState": "AgIAADcAAAAAAAAAAAAkwAgAAAAFAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
->>>>>>> c0e045fee19e3869748af45c236feae4ed2cd326
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T05:19:08.898Z"
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 4,
-              "Title": "HomeForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\HomeForm.Designer.cs",
-              "RelativeDocumentMoniker": "HomeForm.Designer.cs",
-              "ToolTip": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\HomeForm.Designer.cs",
-              "RelativeToolTip": "HomeForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T05:25:19.672Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-=======
-              "DocumentIndex": 7,
->>>>>>> c0e045fee19e3869748af45c236feae4ed2cd326
-              "Title": "BackgroundMusic.cs",
-              "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\BackgroundMusic.cs",
-              "RelativeDocumentMoniker": "BackgroundMusic.cs",
-              "ToolTip": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\BackgroundMusic.cs",
-              "RelativeToolTip": "BackgroundMusic.cs",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAJAAAAAAAAAA==",
->>>>>>> 808baff1cc35972867943d57edd327a475c17fab
-=======
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACwAAAAJAAAAAAAAAA==",
->>>>>>> c0e045fee19e3869748af45c236feae4ed2cd326
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T03:56:54.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 0,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAgwDIBAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T13:39:15.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomeForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\HomeForm.cs",
-              "RelativeDocumentMoniker": "HomeForm.cs",
-              "ToolTip": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\HomeForm.cs [Design]",
-              "RelativeToolTip": "HomeForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T05:41:04.828Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameClock.cs",
-              "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\GameClock.cs",
-              "RelativeDocumentMoniker": "GameClock.cs",
-              "ToolTip": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\GameClock.cs",
-              "RelativeToolTip": "GameClock.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAiwHgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T03:39:29.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-=======
-              "DocumentIndex": 8,
->>>>>>> c0e045fee19e3869748af45c236feae4ed2cd326
-              "Title": "FP.csproj",
-              "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\FP.csproj",
-              "RelativeDocumentMoniker": "FP.csproj",
-              "ToolTip": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\FP.csproj",
-              "RelativeToolTip": "FP.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-12T07:48:24.127Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T14:31:10.584Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\MainForm.cs [Design]",
+              "RelativeToolTip": "MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T14:31:03.049Z"
             }
           ]
         }
