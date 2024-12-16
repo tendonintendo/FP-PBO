@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp\\src\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|c:\\users\\dyanw\\onedrive\\documents\\coding dulu ga sehh\\pbo\\fp\\src\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFB8D380-9112-4346-8A83-D45AD82CBA90}|FP.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameLogic.cs",
+              "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\GameLogic.cs",
+              "RelativeDocumentMoniker": "GameLogic.cs",
+              "ToolTip": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\GameLogic.cs",
+              "RelativeToolTip": "GameLogic.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAuwIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T23:43:33.338Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,14 +49,14 @@
               "RelativeDocumentMoniker": "GameForm.cs",
               "ToolTip": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\GameForm.cs",
               "RelativeToolTip": "GameForm.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAIwEcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAALYBAAAAAAAAAAAAAMwBAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-15T23:44:05.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
@@ -52,7 +69,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\dyanw\\OneDrive\\Documents\\CODING DULU GA SEHH\\PBO\\FP\\src\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",

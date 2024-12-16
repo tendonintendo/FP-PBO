@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Drawing; // Make sure to include this namespace
-using System.IO; // For Path
+using System.Drawing; 
+using System.IO; 
 using System.Windows.Forms; 
 using WinTimer = System.Windows.Forms.Timer; 
 
@@ -24,6 +24,7 @@ namespace FP
         private Label itemNameLabel;
         private Button reportButton;
         private bool isPopupVisible = false;
+        private string reportItemName;
 
         //animasi report
         private WinTimer animationTimer; 
@@ -59,7 +60,7 @@ namespace FP
             this.Controls.Add(reportButton);
 
             animationTimer = new WinTimer();
-            animationTimer.Interval = 15; // 15 ms untuk animasi halus
+            animationTimer.Interval = 15; 
             animationTimer.Tick += AnimationTimer_Tick;
         }
 
@@ -184,81 +185,85 @@ namespace FP
                         if (e.Button == MouseButtons.Left)
                         {
                             selectedItemName = item.Name;
-                            reportButton.Visible = false; // Sembunyikan tombol report jika ada
+                            reportButton.Visible = false; 
                         }
                         else if (e.Button == MouseButtons.Right)
                         {
                             selectedItemName = null;
+                            reportItemName = item.Name;
 
-                            // Menempatkan tombol report relatif terhadap form
-                            // Pastikan tombol tetap dalam batas form
                             int buttonX = e.X;
                             int buttonY = e.Y;
 
-                            // Menentukan ukuran akhir tombol
-                            finalSize = new Size(100, 40); // Sesuaikan dengan ukuran akhir yang diinginkan
+                            finalSize = new Size(100, 40); 
 
-                            // Atur ukuran awal tombol menjadi kecil (misalnya, 0 width dan 0 height)
                             reportButton.Size = new Size(0, 0);
 
-                            // Menentukan lokasi akhir tombol
                             finalLocation = new Point(buttonX, buttonY);
 
-                            // Penyesuaian jika tombol keluar dari sisi kanan
                             if (finalLocation.X + finalSize.Width > this.ClientSize.Width)
                             {
                                 finalLocation.X = this.ClientSize.Width - finalSize.Width - 10; // Padding 10 px
                             }
 
-                            // Penyesuaian jika tombol keluar dari sisi bawah
                             if (finalLocation.Y + finalSize.Height > this.ClientSize.Height)
                             {
                                 finalLocation.Y = this.ClientSize.Height - finalSize.Height - 10; // Padding 10 px
                             }
 
-                            // Set lokasi awal tombol (dimana akan mulai animasi)
                             reportButton.Location = new Point(buttonX, buttonY);
 
-                            // Tampilkan tombol dan mulai animasi
                             reportButton.Visible = true;
                             isAnimating = true;
                             animationStep = 0;
                             animationTimer.Start();
                         }
 
+                        Invalidate();
+                        break;
                     }
                 }
             }
 
             if (!clickedOnItem)
             {
-                // Jika klik tidak pada item manapun, sembunyikan tombol report
-                // Juga cek jika klik bukan pada tombol report itu sendiri
                 if (!reportButton.Bounds.Contains(e.Location))
                 {
-                    reportButton.Visible = false;
+                    HideReportButton();
                 }
-
                 selectedItemName = null;
+                reportItemName = null; 
                 Invalidate();
             }
             else
             {
-                // Jika klik pada item, tapi klik kiri, juga sembunyikan tombol report
                 if (e.Button == MouseButtons.Left)
                 {
-                    reportButton.Visible = false;
+                    HideReportButton();
                 }
             }
         }
 
-
         private void ReportButton_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(selectedItemName))
+            if (!string.IsNullOrEmpty(reportItemName))
             {
-                MessageBox.Show($"Report untuk item: {selectedItemName}", "Report", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                reportButton.Visible = false;
+                bool isChanged = logic.IsItemChanged(reportItemName);
+
+                if (isChanged)
+                {
+                    MessageBox.Show("Berhasil di report!", "Report", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Belum ada perubahan!", "Report", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+                HideReportButton();
+            }
+            else
+            {
+                MessageBox.Show("Belum ada perubahan!", "Report", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -416,11 +421,9 @@ namespace FP
         {
             if (animationStep < maxAnimationSteps)
             {
-                // Hitung ukuran baru secara bertahap
                 int newWidth = reportButton.Width + finalSize.Width / maxAnimationSteps;
                 int newHeight = reportButton.Height + finalSize.Height / maxAnimationSteps;
 
-                // Pastikan tidak melebihi ukuran akhir
                 if (newWidth > finalSize.Width) newWidth = finalSize.Width;
                 if (newHeight > finalSize.Height) newHeight = finalSize.Height;
 
@@ -430,10 +433,9 @@ namespace FP
             }
             else
             {
-                // Selesai animasi
                 animationTimer.Stop();
                 isAnimating = false;
-                reportButton.Size = finalSize; // Pastikan ukuran akhir
+                reportButton.Size = finalSize; 
             }
         }
 
@@ -445,16 +447,16 @@ namespace FP
                 isAnimating = false;
             }
             reportButton.Visible = false;
-            selectedItemName = null;
+            reportItemName = null; 
             Invalidate();
         }
 
         private void ClearState()
         {
             selectedItemName = null;
+            reportItemName = null; 
             HideReportButton();
         }
-
 
     }
 }

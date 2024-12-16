@@ -97,6 +97,19 @@ namespace FP
             }
         }
 
+        public bool IsItemChanged(string itemName)
+        {
+            for (int i = 0; i < _changeables.Count; i++)
+            {
+                if (_changeables[i].Name.Equals(itemName, StringComparison.OrdinalIgnoreCase))
+                {
+                    return _history.Contains(i);
+                }
+            }
+            return false;
+        }
+
+
         public void LoseMessage()
         {
             MessageBox.Show("You Lose!");
