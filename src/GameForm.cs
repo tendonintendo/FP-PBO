@@ -53,12 +53,24 @@ namespace FP
             reportButton.Font = new Font("Arial", 12, FontStyle.Bold);
 
             reportButton.Click += ReportButton_Click;
+            reportButton.MouseEnter += ReportButton_MouseEnter;
+            reportButton.MouseLeave += ReportButton_MouseLeave;
 
             this.Controls.Add(reportButton);
 
             animationTimer = new WinTimer();
             animationTimer.Interval = 15; // 15 ms untuk animasi halus
             animationTimer.Tick += AnimationTimer_Tick;
+        }
+
+        private void ReportButton_MouseEnter(object sender, EventArgs e)
+        {
+            reportButton.BackColor = Color.Gray;
+        }
+
+        private void ReportButton_MouseLeave(object sender, EventArgs e)
+        {
+            reportButton.BackColor = Color.Black;
         }
 
         private void LoadGame()
