@@ -108,7 +108,8 @@ namespace FP
             {
                 new Ruangan("Gaming Room", "../../../../images/Room 1/bg.png"),
                 new Ruangan("Bathroom", "../../../../images/Room 2/bg.png"),
-                new Ruangan("Bedroom", "../../../../images/Room 3/bg.png")
+                new Ruangan("Bedroom", "../../../../images/Room 3/bg.png"),
+                new Ruangan("Living Room", "../../../../images/Room 4/bg.png")
             };
 
             // Ruangan 1
@@ -122,7 +123,7 @@ namespace FP
             rooms[0].AddItem(new Benda("Sofa kanan", new Point(1450, 619), "../../../../images/Room 1/sofa_kanan.png", new Size(231, 198)));
             rooms[0].AddItem(new Benda("Meja TV", new Point(1057, 598), "../../../../images/Room 1/meja_TV.png", new Size(408, 48)));
             rooms[0].AddItem(new Benda("TV awal", new Point(1010, 295), "../../../../images/Room 1/TV_awal.png", new Size(494, 304)));
-            rooms[0].AddItem(new Benda("Stick awal", new Point(1360, 559), "../../../../images/Room 1/stick_awal.png", new Size(84, 49)));
+            rooms[0].AddItem(new Benda("Stick", new Point(1360, 559), "../../../../images/Room 1/stick_awal.png", new Size(84, 49)));
             rooms[0].AddItem(new Benda("Headset kanan", new Point(1260, 620), "../../../../images/Room 1/headset.png", new Size(80, 90)));
             rooms[0].AddItem(new Benda("Headset kiri", new Point(1160, 620), "../../../../images/Room 1/headset.png", new Size(80, 90)));
 
@@ -146,6 +147,14 @@ namespace FP
             rooms[2].AddItem(new Benda("Perapian", new Point(1055, 403), "../../../../images/Room 3/perapian.png", new Size(420, 430)));
             rooms[2].AddItem(new Benda("Banteng", new Point(1100, 200), "../../../../images/Room 3/banteng.png", new Size(340, 180)));
             rooms[2].AddItem(new Benda("Lemari", new Point(1470, 184), "../../../../images/Room 3/lemari.png", new Size(390, 650)));
+
+            // Ruangan 4
+            rooms[3].AddItem(new Benda("Frame", new Point(400, 200), "../../../../images/Room 4/frame_awal.png", new Size(360, 240)));
+            rooms[3].AddItem(new Benda("Sofa LL", new Point(330, 527), "../../../../images/Room 4/SofaLL.png", new Size(500, 300)));
+            rooms[3].AddItem(new Benda("Rak LL", new Point(100, 417), "../../../../images/Room 4/RakLL_awal.png", new Size(200, 400)));
+            rooms[3].AddItem(new Benda("Pot Atas", new Point(850, -15), "../../../../images/Room 4/potatas.png", new Size(180, 300)));
+            rooms[3].AddItem(new Benda("Lemari LL", new Point(1450, 90), "../../../../images/Room 4/lemariLL_awal.png", new Size(400, 750)));
+            rooms[3].AddItem(new Benda("TV LL", new Point(950, 487), "../../../../images/Room 4/TVLL.png", new Size(400, 350)));
 
             // Set ruangan pertama yang aktif
             currentRoom = rooms[roomIndex];
