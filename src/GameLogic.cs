@@ -18,6 +18,7 @@ namespace FP
         private HashSet<int> _history;
         private TimeSpan _endGame;
         private TimeSpan _penaltyTime;
+        private bool _ended;
 
         public GameLogic(Ruangan[] rooms, GameClock gameClock)
         {
@@ -38,7 +39,8 @@ namespace FP
                 }
             }
             _history = new HashSet<int>();
-            _endGame = new TimeSpan(6, 0, 0);
+            _endGame = new TimeSpan(2, 0, 0);
+            _ended = false;
             StartRandomTransform();
         }
 
@@ -62,7 +64,7 @@ namespace FP
                 _changeables[num].ImageSize = new Size(172, 193);
                 _changeables[num].Position = new Point(30, 625);
             }
-            MessageBox.Show($"Transformed: {_changeables[num].Name}");
+            //MessageBox.Show($"Transformed: {_changeables[num].Name}");
             _history.Add(num);
             countChanges++;
         }
@@ -89,18 +91,19 @@ namespace FP
 
                 TimeSpan targetTime = _gameClock.GameTime.Add(new TimeSpan(0, delayMinutes, 0));
 
-                while (_gameClock.GameTime < targetTime)
+                while (_gameClock.GameTime < targetTime && targetTime < _endGame)
                 {
                     await Task.Delay(100);
                 }
 
                 Transform();
                 await Task.Delay(100);
-                if (countChanges == 3)
+                if (countChanges == 3 && _gameClock.GameTime.Add(new TimeSpan(0, 30, 0)) < _endGame) 
                 {
                     await StopTransforming();
                 }
             }
+            if (_ended) return;
             WinMessage();
         }
 
@@ -147,12 +150,20 @@ namespace FP
         
         public void WinMessage()
         {
-            MessageBox.Show("You Won!");
+            using (WinForm winForm = new WinForm())
+            {
+                _ended = true;
+                winForm.ShowDialog();
+            }
         }
 
         public void LoseMessage()
         {
-            MessageBox.Show("You Lose!");
+            using (LoseForm loseForm = new LoseForm())
+            {
+                _ended = true;
+                loseForm.ShowDialog();
+            }
         }
 
 
